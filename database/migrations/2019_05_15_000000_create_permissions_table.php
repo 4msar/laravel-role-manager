@@ -16,7 +16,7 @@ class CreatePermissionsTable extends Migration
         Schema::create(config('role_manager.database.permission_table'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

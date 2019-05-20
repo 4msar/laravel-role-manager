@@ -11,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
+	
+	protected $fillable = ['name', 'status'];
     public function __construct()
     {
         $this->setTable(config('role_manager.database.role_table'));

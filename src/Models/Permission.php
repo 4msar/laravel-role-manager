@@ -12,6 +12,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Permission extends Model
 {
+	
+	protected $fillable = ['name', 'title'];
+	
     public function __construct()
     {
         $this->setTable(config('role_manager.database.permission_table'));
