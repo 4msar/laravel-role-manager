@@ -10,6 +10,7 @@ namespace MSAR\RoleManager;
 use Schema;
 use MSAR\RoleManager\Models\Permission;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\Compilers\BladeCompiler;
 
 class RoleManagerServiceProvider extends ServiceProvider
 {
