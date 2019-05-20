@@ -1,0 +1,31 @@
+{
+    "name": "msa-rakib/laravel-role-manager",
+    "description": "Laravel Role Manager.",
+    "authors": [
+        {
+            "name": "Saiful Alam",
+            "email": "msa4rakib@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MSAR\\RoleManager\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MSAR\\RoleManager\\RoleManagerServiceProvider"
+            ]
+        }
+    }
+}
